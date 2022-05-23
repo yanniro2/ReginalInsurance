@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReginalInsurance/static/css/main.ac2c7e52.css",
-    "main.js": "/ReginalInsurance/static/js/main.eb70f126.js",
+    "main.js": "/ReginalInsurance/static/js/main.ac1b73c5.js",
     "static/js/787.e1cd1251.chunk.js": "/ReginalInsurance/static/js/787.e1cd1251.chunk.js",
     "static/media/Home.jpg": "/ReginalInsurance/static/media/Home.d73fb872342415b48a43.jpg",
     "static/media/Land.jpg": "/ReginalInsurance/static/media/Land.2029acc49278a71644a9.jpg",
@@ -15,11 +15,11 @@
     "static/media/add.svg": "/ReginalInsurance/static/media/add.0a53e6f32aa84372a436647ab3f06cb4.svg",
     "static/media/next.svg": "/ReginalInsurance/static/media/next.68b39c5b0106eb25cf3a451a31ce97d3.svg",
     "main.ac2c7e52.css.map": "/ReginalInsurance/static/css/main.ac2c7e52.css.map",
-    "main.eb70f126.js.map": "/ReginalInsurance/static/js/main.eb70f126.js.map",
+    "main.ac1b73c5.js.map": "/ReginalInsurance/static/js/main.ac1b73c5.js.map",
     "787.e1cd1251.chunk.js.map": "/ReginalInsurance/static/js/787.e1cd1251.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac2c7e52.css",
-    "static/js/main.eb70f126.js"
+    "static/js/main.ac1b73c5.js"
   ]
 }
