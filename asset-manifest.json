@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ReginalInsurance/static/css/main.ac2c7e52.css",
+    "main.js": "/ReginalInsurance/static/js/main.90fe6b74.js",
+    "static/js/787.e1cd1251.chunk.js": "/ReginalInsurance/static/js/787.e1cd1251.chunk.js",
+    "static/media/Home.jpg": "/ReginalInsurance/static/media/Home.d73fb872342415b48a43.jpg",
+    "static/media/Land.jpg": "/ReginalInsurance/static/media/Land.2029acc49278a71644a9.jpg",
+    "static/media/Car.jpg": "/ReginalInsurance/static/media/Car.cbffa344e93988c390af.jpg",
+    "static/media/user.jpg": "/ReginalInsurance/static/media/user.87e51d216124b03cdfe0.jpg",
+    "static/media/day.svg": "/ReginalInsurance/static/media/day.faa5054f62a3976d4e15aa4b7a4f9573.svg",
+    "index.html": "/ReginalInsurance/index.html",
+    "static/media/alert.svg": "/ReginalInsurance/static/media/alert.99fcafe5ad55aae54e2f489803a56d2b.svg",
+    "static/media/night.svg": "/ReginalInsurance/static/media/night.990ebfc19824703b04cc4ad28365a977.svg",
+    "static/media/CheckArrow.svg": "/ReginalInsurance/static/media/CheckArrow.c8e04c405b5bd3680a3b38b393a75321.svg",
+    "static/media/add.svg": "/ReginalInsurance/static/media/add.0a53e6f32aa84372a436647ab3f06cb4.svg",
+    "static/media/next.svg": "/ReginalInsurance/static/media/next.68b39c5b0106eb25cf3a451a31ce97d3.svg",
+    "main.ac2c7e52.css.map": "/ReginalInsurance/static/css/main.ac2c7e52.css.map",
+    "main.90fe6b74.js.map": "/ReginalInsurance/static/js/main.90fe6b74.js.map",
+    "787.e1cd1251.chunk.js.map": "/ReginalInsurance/static/js/787.e1cd1251.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac2c7e52.css",
+    "static/js/main.90fe6b74.js"
+  ]
+}
