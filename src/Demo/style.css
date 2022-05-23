@@ -1,0 +1,58 @@
+label {
+  font-size: 2rem;
+  margin: 1rem;
+  text-transform: capitalize;
+}
+.from {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 40%;
+  height: 80%;
+  background-color: #eee;
+}
+
+select:invalid[focused="true"] {
+  border-bottom: 3px solid red;
+}
+
+.message {
+  width: 100%;
+  font-size: 2rem;
+  color: red;
+  display: none;
+}
+
+/* input:invalid[focused="true"] ~ .message {
+  display: block;
+} */
+
+/* #yes:checked ~ label {
+  color: blue;
+} */
+
+input:checked ~ label {
+  color: blue;
+}
+input:checked .message {
+  display: block;
+}
+
+/* input[type="radio"]:invalid[focused="true"] .message {
+  border-bottom: 2px solid red;
+  background-color: red;
+  display: block;
+} */
+
+/* input:radio:not(:checked) {
+  border: 2px solid red;
+} */
+
+/* #yes:not(:checked) ~ label {
+  color: red;
+}
+
+#yes-radio:checked[focus="true"] ~ div {
+  color: red;
+} */

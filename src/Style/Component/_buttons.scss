@@ -1,0 +1,216 @@
+.btn {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+
+  border: none;
+  outline: none;
+  border-radius: 5rem;
+  letter-spacing: 2px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 1rem;
+}
+
+.cancel {
+  background-color: $green;
+  &:hover,
+  &:active {
+    background-color: rgb(40, 105, 40);
+  }
+}
+
+.submit {
+  background-color: $blue;
+  &:hover {
+    background-color: rgb(68, 68, 231);
+  }
+}
+
+.preview {
+  background-color: #fff;
+  color: $blue;
+
+  &:hover {
+    background-color: #eee;
+  }
+}
+
+.btn-no {
+  color: $green;
+  padding: 1rem 3rem;
+  background-color: #fff;
+  &:hover {
+    background-color: rgb(2, 82, 2);
+    transition: all 0.3s;
+    color: #fff;
+  }
+}
+.btn-yes {
+  color: $blue;
+  padding: 1rem 3rem;
+  background-color: #fff;
+  letter-spacing: 0;
+  &:hover {
+    background-color: rgb(2, 2, 61);
+    color: #fff;
+  }
+}
+
+.big-btn {
+  background-color: $blue;
+  color: #fff;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .icon {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(303deg)
+      brightness(107%) contrast(101%);
+
+    width: 3rem;
+    margin-right: 2rem;
+  }
+
+  &:hover {
+    background-color: rgb(6, 135, 255);
+    transition: all 0.3s;
+  }
+}
+
+.btn-main {
+  width: 30%;
+  height: 40%;
+}
+
+// toggle button yes / no
+.toggle {
+  width: 15rem;
+  height: 5rem;
+  background-color: rgb(180, 180, 180);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#yes-radio {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#no-radio {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: none;
+}
+
+.off-btn {
+  opacity: 0;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 8rem;
+  top: 0.5rem;
+}
+
+.on-btn {
+  opacity: 0;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 8rem;
+  margin-top: 0.5rem;
+}
+
+#yes-radio:checked ~ .on-btn {
+  top: 0;
+  opacity: 1;
+  display: inline;
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding: 0.5rem;
+  color: #fff;
+  transition: 0.4s;
+  z-index: 5;
+}
+
+#no-radio:checked ~ .off-btn {
+  opacity: 1;
+  display: inline;
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding: 0.5rem;
+  color: #fff;
+  z-index: 5;
+}
+#no-radio:checked ~ .off-btn::before {
+  position: absolute;
+  content: "";
+  width: 16rem;
+  height: 6rem;
+  top: -1rem;
+  bottom: 0;
+  left: -8rem;
+  right: 0;
+  background-color: $green;
+  z-index: -5;
+}
+#yes-radio:checked ~ .on-btn::before {
+  position: absolute;
+  content: "";
+  width: 16rem;
+  height: 6rem;
+  top: -1rem;
+  bottom: 0;
+  left: -3rem;
+  right: 0;
+  background-color: $blue;
+  z-index: -5;
+}
+
+#yes-radio:checked ~ #no-radio {
+  opacity: 1;
+  display: inline;
+}
+
+#yes-radio:checked {
+  opacity: 0;
+  display: none;
+}
+#no-radio:checked {
+  opacity: 0;
+  display: none;
+}
+#no-radio:checked ~ #yes-radio {
+  opacity: 1;
+  display: inline;
+}

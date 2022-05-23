@@ -1,0 +1,201 @@
+.active-icon {
+  fill: #fff;
+}
+
+.datalist-width {
+  max-width: 15rem !important;
+}
+
+.widHalf {
+  width: 20rem !important;
+}
+
+.width-1 {
+  width: 100% !important;
+}
+
+.width-2 {
+  width: 20rem !important;
+  background-color: orange;
+  height: 2rem;
+  display: block;
+  padding: 0;
+}
+
+.width-3 {
+  width: 50rem;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 2rem;
+
+  &-left {
+    display: grid;
+    align-items: center;
+    justify-content: start;
+  }
+  &-right {
+    display: grid;
+    align-items: center;
+    justify-self: end;
+  }
+}
+
+.flex {
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mg-4 {
+  margin-right: 4rem !important;
+}
+
+.mgb-4 {
+  margin: 4rem 0 !important;
+}
+
+.mg-left {
+  margin-left: 2rem !important;
+}
+
+.mg-top {
+  margin-top: 2rem !important;
+}
+
+.grid-half {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  grid-column-gap: 4rem;
+}
+
+.width-max {
+  width: 100% !important;
+}
+
+.grid-page {
+  display: grid;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.sub-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow-y: scroll;
+  position: relative;
+}
+.form-1 {
+  margin-top: 1rem;
+  width: 50%;
+  height: 70%;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.flex-2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pad-1 {
+  padding: 0 3rem !important;
+}
+
+.mar-top-bottom {
+  margin: 2rem 0 !important;
+}
+
+.Add {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: first baseline;
+  width: 100%;
+}
+
+.sub-page-3 {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  overflow-y: scroll;
+  position: relative;
+}
+
+.Link-icon {
+  margin: 1rem !important;
+}
+
+.flex-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vw;
+  margin-left: 2rem;
+}
+
+.pad-2 {
+  padding: 2rem !important;
+}
+
+.flex-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.flex-1-coloum {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-space {
+  width: 100rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

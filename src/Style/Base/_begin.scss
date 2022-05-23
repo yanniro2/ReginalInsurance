@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 50.5%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+.display {
+  opacity: 0 !important;
+  display: block !important;
+}
+
+#hidden_div {
+  display: none;
+}

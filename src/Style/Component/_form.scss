@@ -1,0 +1,425 @@
+.h1 {
+  color: $blue;
+  text-transform: uppercase;
+  align-items: stretch;
+  justify-content: flex-start;
+  font-size: 2.5rem;
+}
+
+.h2 {
+  color: $blue;
+  text-transform: capitalize;
+  margin: 1rem;
+  font-size: 2.1rem;
+  margin-left: 2rem;
+}
+
+.heading {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/// Input Radio Style
+.radio-type-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 15rem;
+  margin: 1rem;
+
+  label {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $blue;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+}
+
+.true-class,
+.false-class {
+  display: flex;
+  align-items: flex-end;
+  margin: 1rem;
+  position: relative;
+  margin-left: 5rem;
+}
+
+.type-yes,
+.type-no {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.false-radio:checked ~ label {
+  color: $green;
+  transition: all 0.3s;
+}
+
+.true-radio:checked ~ label {
+  color: $green;
+  transition: all 0.3s;
+}
+
+.true-radio,
+.false-radio {
+  opacity: 0;
+  display: none;
+}
+
+.radio-true,
+.radio-false {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -1rem;
+}
+
+.radio-true::before,
+.radio-false::before {
+  position: absolute;
+  top: 0;
+  left: -4rem;
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #eee;
+  border: 4px solid $blue;
+  display: inline-block;
+}
+
+.true-radio:checked ~ label .radio-true::before,
+.false-radio:checked ~ label .radio-false::before {
+  background-color: $green;
+  transition: all 0.3s;
+  border: 4px solid rgb(13, 88, 13);
+}
+
+// Radio type 3
+.radio-type-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  label {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $blue;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+}
+
+// DropDown style start ------->
+.dropdown {
+  display: block;
+  position: relative;
+  padding: 1rem;
+  font-size: 2rem;
+  color: $blue;
+  font-weight: 500;
+
+  .up {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 18px solid $blue;
+    cursor: pointer;
+  }
+
+  &-body {
+    position: absolute;
+    cursor: pointer;
+    top: 4rem;
+    background-color: rgb(255, 255, 255);
+    width: 7rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    z-index: 1;
+    display: none;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  &-content {
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}
+
+.dropdown:hover .dropdown-body {
+  display: block;
+  transition: all 0.2s;
+}
+
+/// --------> DropDown Style end
+
+.text {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.input-text {
+  display: inline-block;
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  color: $green;
+  font-weight: 600;
+  border-bottom: 3px solid $blue;
+  text-transform: capitalize;
+  margin: 1rem;
+  outline: none;
+  max-width: 18rem;
+
+  &::placeholder {
+    color: $blue;
+    font-weight: 600;
+  }
+
+  &:focus {
+    border-bottom: 3px solid $green;
+  }
+}
+
+.input-text-single {
+  display: inline-block;
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  color: $green;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 1rem;
+  outline: none;
+  max-width: 15rem;
+  border-bottom: 3px solid transparent;
+
+  &::placeholder {
+    color: $blue;
+    font-weight: 600;
+  }
+
+  &:focus {
+    border-bottom: 3px solid $green;
+    transition: all 0.5s;
+  }
+}
+
+.text-pa {
+  font-size: 2rem;
+  color: $blue;
+  font-weight: 600;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+// Input Range
+.range-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: 2rem;
+}
+
+.min,
+.max {
+  color: $blue;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem;
+}
+
+.range {
+  appearance: none;
+  max-width: 10rem;
+  height: 0.5rem;
+  background: rgb(228, 228, 228);
+  border-radius: 5rem;
+}
+
+/// Select
+.select {
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: $blue;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  margin-left: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  &:hover {
+    background-color: $blue;
+    color: #fff;
+    transition: all 0.3s;
+  }
+}
+
+// Input Date
+.date-from {
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  color: $blue;
+  font-weight: 600;
+  outline: none;
+
+  &::before {
+    content: "Policy From Date";
+    display: inline-block;
+    color: $blue;
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+
+.date-to {
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  color: $blue;
+  font-weight: 600;
+  outline: none;
+
+  &::before {
+    content: "Policy to Date";
+    display: inline-block;
+    color: $blue;
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+
+.date-of-oldest {
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  color: $blue;
+  font-weight: 600;
+  outline: none;
+
+  &::before {
+    content: "Granted of Oldest Insured";
+    display: inline-block;
+    color: $blue;
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+
+.date-of-year {
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  color: $blue;
+  font-weight: 600;
+  outline: none;
+
+  &::before {
+    content: "Year";
+    display: inline-block;
+    color: $blue;
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+
+.date {
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  color: $blue;
+  font-weight: 600;
+  outline: none;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    color: $blue;
+    font-size: 2rem;
+    width: 100%;
+  }
+}
+
+.input-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+
+  label {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $blue;
+    display: block;
+  }
+
+  .date-input {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $blue;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    margin-left: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+      transition: all 0.3s;
+    }
+  }
+}
+::-webkit-calendar-picker-indicator {
+  background-color: #fff;
+  color: $blue;
+  border-radius: 0.5rem;
+}
+
+input:invalid[focused="true"] {
+  border-bottom: 3px solid red;
+}
+
+select:invalid[focused="true"] {
+  border-bottom: 3px solid red;
+}
+
+.error {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+input[type="radio"]:invalid[focused="true"] ~ span {
+  display: block;
+}

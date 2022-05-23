@@ -1,0 +1,91 @@
+/* input:invalid[focused="true"] ~ span {
+  display: block;
+}
+
+input:invalid[focused="true"] {
+  border: 1px solid red;
+} */
+/* 
+input:invalid ~ span {
+  display: block;
+}
+
+input:invalid ~ .error-icon {
+  display: block !important;
+}
+
+input:valid ~ .check-icon {
+  display: block !important;
+}
+.error-icon {
+  width: 1.5rem;
+  margin-left: 1rem;
+  filter: invert(22%) sepia(90%) saturate(6691%) hue-rotate(357deg)
+    brightness(103%) contrast(118%);
+}
+
+.check-icon {
+  width: 1.5rem;
+  margin-left: 1rem;
+  filter: invert(62%) sepia(94%) saturate(3621%) hue-rotate(83deg)
+    brightness(124%) contrast(118%);
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.error {
+  display: none;
+  opacity: 0;
+}
+
+input:focus:invalid ~ .check .error {
+  display: block !important;
+  opacity: 1;
+}
+
+.valid {
+  display: none;
+}
+
+input:valid ~ .check .valid {
+  display: block !important;
+  opacity: 1;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* input:invalid ~ span {
+  display: block;
+} */
+
+/* input:invalid ~ .check {
+  display: block !important;
+  opacity: 1;
+} */
+
+.icon-size {
+  width: 2rem;
+}
+
+.red {
+  filter: invert(22%) sepia(90%) saturate(6691%) hue-rotate(357deg)
+    brightness(103%) contrast(118%);
+}
+
+.green {
+  filter: invert(62%) sepia(94%) saturate(3621%) hue-rotate(83deg)
+    brightness(124%) contrast(118%);
+}
+
+/* input:invalid[focused="true"] ~ .div {
+  background-color: red;
+  width: 2rem;
+  height: 2rem;
+} */

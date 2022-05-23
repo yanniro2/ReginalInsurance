@@ -1,0 +1,46 @@
+.copyright {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  font-weight: 600;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+h3 {
+  color: $blue;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+h4 {
+  color: #4b4b4b;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.developed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  a {
+    margin-left: 1rem;
+  }
+}
