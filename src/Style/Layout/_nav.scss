@@ -12,7 +12,7 @@
       font-size: 2rem;
       font-weight: 600;
       border-left: 10px solid #fff;
-      padding: 1rem 2rem;
+      padding: 1rem 1rem;
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -23,6 +23,10 @@
       background-color: rgb(241, 241, 241);
 
       box-shadow: rgba(20, 20, 20, 0.16) 0px 1px 4px;
+      span {
+        width: 100%;
+        text-align: left;
+      }
       &:hover {
         background-color: $blue;
         color: #fff;

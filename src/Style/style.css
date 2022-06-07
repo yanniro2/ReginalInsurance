@@ -229,7 +229,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   border-left: 10px solid #fff;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,6 +246,11 @@ body {
   background-color: #f1f1f1;
   -webkit-box-shadow: rgba(20, 20, 20, 0.16) 0px 1px 4px;
           box-shadow: rgba(20, 20, 20, 0.16) 0px 1px 4px;
+}
+
+.navigation .nav-top .Link-1 span {
+  width: 100%;
+  text-align: left;
 }
 
 .navigation .nav-top .Link-1:hover {
@@ -712,7 +717,7 @@ h4 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 90%;
-  height: 90%;
+  height: 60vh;
 }
 
 .box-main {
@@ -1212,6 +1217,7 @@ input:valid ~ .check .valid {
   color: #005391;
   text-transform: capitalize;
   cursor: pointer;
+  margin: 1rem;
 }
 
 .true-class,
@@ -1860,6 +1866,7 @@ input[type="radio"]:invalid[focused="true"] ~ span {
 }
 
 #no-radio:checked ~ .off-btn {
+  top: -0.5rem;
   opacity: 1;
   display: inline;
   font-size: 2rem;
@@ -1913,5 +1920,10 @@ input[type="radio"]:invalid[focused="true"] ~ span {
 #no-radio:checked ~ #yes-radio {
   opacity: 1;
   display: inline;
+}
+
+.Link-btn {
+  font-size: 2.5rem;
+  color: #005391;
 }
 /*# sourceMappingURL=style.css.map */

@@ -164,6 +164,7 @@
 }
 
 #no-radio:checked ~ .off-btn {
+  top: -0.5rem;
   opacity: 1;
   display: inline;
   font-size: 2rem;

@@ -35,8 +35,8 @@ function RoutePath() {
       <Router>
         <div className="content">
           <Routes>
-            <Route exact path="/" element={<MainSection />} />
-            <Route exact path="/Motor/*" element={<Motor />}>
+            <Route exact path="/ReginalInsurance" element={<MainSection />} />
+            <Route exact path="/ReginalInsurance/Motor" element={<Motor />}>
               <Route index element={<MotorClient />} />
               <Route path="Client" element={<MotorClient />} />
               <Route path="Import" element={<MotorImport />} />
@@ -53,7 +53,7 @@ function RoutePath() {
               </Route>
               <Route path="Claims" element={<MotorClaims />} />
             </Route>
-            <Route exact path="/Land/*" element={<Land />}>
+            <Route exact path="/ReginalInsurance/Land" element={<Land />}>
               <Route index element={<LandClient />} />
               <Route path="Client" element={<LandClient />} />
               <Route path="Import" element={<LandImport />} />
@@ -64,7 +64,7 @@ function RoutePath() {
               </Route>
               <Route path="Claims" element={<LandClaims />} />
             </Route>
-            <Route exact path="/Home/*" element={<Home />}>
+            <Route exact path="/ReginalInsurance/Home" element={<Home />}>
               <Route index element={<HomeClient />} />
               <Route path="Client" element={<HomeClient />} />
               <Route path="Import" element={<HomeImport />} />
